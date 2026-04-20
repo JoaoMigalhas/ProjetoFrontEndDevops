@@ -1,0 +1,7 @@
+{
+    "titulo": "Matrix",
+    "ano": 1999,
+    "genero": ["ficção ciêntífica", "ação"],
+    "sinopse": "Um hacker descobre que a realidade percebida pela humanidade é, na verdade, uma simulação digital criada por máquinas para subjugar a espécie. Ao se juntar a um grupo de rebeldes, ele deve decidir entre continuar na ilusão confortável ou encarar a dura verdade da resistência. Ele descobre possuir habilidades extraordinárias para manipular as regras desse mundo artificial, tornando-se a chave para a libertação final.",
+    "capa": "../capa/matrix_capa.jpg"
+}
