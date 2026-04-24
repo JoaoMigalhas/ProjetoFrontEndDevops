@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 let inputLogin = document.getElementById("inputLoginBox");
 
@@ -16,7 +16,7 @@ function confirmarNickname() {
 
         if(usuariosCarregado.nickname === valorInputLogin){
             window.alert("login realizado com sucesso");
-            console.log(usuarioCarregado.nickname + "logou com sucesso!");
+            console.log(usuarioCarregado.nickname + " logou com sucesso!");
         } else {
             var newUser = {
                 nickname: valorInputLogin,
@@ -31,7 +31,7 @@ function confirmarNickname() {
             fs.writeFileSync("../database/users.json", JSON.stringify(newUser));
 
             window.alert("cadastro realizado com sucesso!");
-            console.log(valorInputLogin + "cadastrou com sucesso!");
+            console.log(valorInputLogin + " cadastrou com sucesso!");
         }
         
         //fechando a div do login
