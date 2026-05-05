@@ -1,48 +1,28 @@
-import fs from 'fs';
+let inputLogin = document.getElementById('inputLoginBox');
+let button = document.getElementById('buttonLoginBox');
 
-let inputLogin = document.getElementById("inputLoginBox");
+button.addEventListener('click', async () => {
+    let nickname = inputLogin.value.trim();
 
-function confirmarNickname() {
-    var valorInputLogin = inputLogin.value;
-    
-    if ((valorInputLogin.trim().length < 5) && (valorInputLogin.trim().length > 0) && (valorInputLogin.trim() !== null) && (valorInputLogin !== undefined)) { 
-        //validação JSON
-        
-        //lendo o arquivo
-        let conteudoArquivo = fs.readFileSync("../database/users.json", "utf-8");
-
-        //transformando em objeto
-        let usuariosCarregado = JSON.parse(conteudoArquivo);
-
-        if(usuariosCarregado.nickname === valorInputLogin){
-            window.alert("login realizado com sucesso");
-            console.log(usuarioCarregado.nickname + " logou com sucesso!");
-        } else {
-            var newUser = {
-                nickname: valorInputLogin,
-                score: 0,
-                acertos: 0,
-                erros: 0,
-                dicas: 3
-            }
-
-            //escrevendo o novo usuário no JSON
-            usuariosCarregado.push(newUser);
-            fs.writeFileSync("../database/users.json", JSON.stringify(newUser));
-
-            window.alert("cadastro realizado com sucesso!");
-            console.log(valorInputLogin + " cadastrou com sucesso!");
-        }
-        
-        //fechando a div do login
-        var divLogin = document.querySelector(".login");
-        divLogin.style.display = "none";
-    } else {
-        window.alert("valor inserido inválido!");
-        
-        //teste
-        JSON.parse
+    //validações de dados
+    if(!/^[a-zA-Z0-9]{0,4}$/.test(nickname)) {
+        window.alert('O nickname deve ter entre 0 a 4 caracteres válidos!');
+        return;
     }
-    //zerando o input
-    inputLogin.value = "";
-}
+
+    if(typeof nickname != string) {
+        window.alert('O valor inserido deve ser uma string');
+        return;
+    }
+
+    //enviando para a rota api/login
+    try {
+        const response = await fetch('/api/login', {
+            method: 'POST',
+            headers: {'Content-Type' : 'application/json'},
+            body: JSON.stringify({nickname})
+        }) 
+    } catch (networkError) {
+        console.log(`Não foi possível se conectar ao servidor: ${networkError}`);
+    }
+})
