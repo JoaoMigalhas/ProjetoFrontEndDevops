@@ -10,7 +10,7 @@ button.addEventListener('click', async () => {
         return;
     }
 
-    if(typeof nickname != string) {
+    if(typeof nickname != 'string') {
         window.alert('O valor inserido deve ser uma string');
         return;
     }

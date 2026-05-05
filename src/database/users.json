@@ -1,7 +1,9 @@
-[{
+[
+  {
     "nickname": "TEST",
     "score": 0,
     "acertos": 0,
     "erros": 0,
     "dicas": 3
-}]
+  }
+]
