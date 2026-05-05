@@ -28,9 +28,9 @@ routes.post('/api/login', async (req, res) => {
             }
         }
 
-        //se o nick já tiver sido cadastrado (condição aidna não implementada)
+        //se o nick já tiver sido cadastrado 
         if(nicks.some(u => u.nickname === nickname)) {
-            return res.status(501).json({ message: 'condição de nickname válido ainda não implementado'});
+            return res.status(200).json({ message: `${nickname} já existe, login realizado com sucesso`});
         } else {
             //modelo de cadastro de novos usuários
             const newUser = {

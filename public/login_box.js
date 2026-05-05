@@ -21,8 +21,19 @@ button.addEventListener('click', async () => {
             method: 'POST',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify({nickname})
-        }) 
+        });
+
+        //fechando a div login
+        if (response.ok) {
+            let divLogin = document.querySelector(".login");
+            divLogin.style.display = "none";
+        } else {
+            alert('Erro ao logar');
+        }
+
     } catch (networkError) {
         console.log(`Não foi possível se conectar ao servidor: ${networkError}`);
     }
+
+
 })
