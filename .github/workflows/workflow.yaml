@@ -1,0 +1,22 @@
+name: primeiro-workflow
+run-name: Primeiro Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Hello World
+        run: echo "Deu bom!"
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        with:
+          args: >
+            -Dsonar.projectKey=devops
+            -Dsonar.sources=.
+        env:
+          SONAR_HOST_URL: https://sonar-2511914.azurewebsites.net
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
