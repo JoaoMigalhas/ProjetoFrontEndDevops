@@ -18,5 +18,5 @@ jobs:
             -Dsonar.projectKey=devops
             -Dsonar.sources=.
         env:
-          SONAR_HOST_URL: https://sonar-2511914.azurewebsites.net
+          SONAR_HOST_URL: https://projeto-devops.azurewebsites.net
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
