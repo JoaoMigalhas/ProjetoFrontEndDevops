@@ -1,22 +1,27 @@
-name: primeiro-workflow
-run-name: Primeiro Workflow
-on: [push]
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+
 jobs:
   build:
+    name: Build and analyze
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v4
-
-      - name: Hello World
-        run: echo "Deu bom!"
-
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+      - uses: actions/checkout@v4
         with:
-          args: >
-            -Dsonar.projectKey=devops
-            -Dsonar.sources=.
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - uses: SonarSource/sonarqube-scan-action@v6
         env:
-          SONAR_HOST_URL: https://projeto-devops.azurewebsites.net
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+      # If you wish to fail your job when the Quality Gate is red, uncomment the
+      # following lines. This would typically be used to fail a deployment.
+      # - uses: SonarSource/sonarqube-quality-gate-action@v1
+      #   timeout-minutes: 5
+      #   env:
+      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
