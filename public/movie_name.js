@@ -10,4 +10,19 @@ buttonMovieName.addEventListener('click', async () => {
         headers: {'Content-Type' : 'application/json'},
         body: JSON.stringify( {filme} )
     })
-})
+});
+
+
+// evento de sorteio do filme
+button.addEventListener('click', async () => {
+    
+    //sorteio do id
+    const id = (Math.floor(Math.random() * 2)).toString();
+
+    //envia o número sorteado para a rota que vai puxar do BD qual filme foi sorteado
+    const response = await fetch('/api/filmeSorteado', {
+        method: 'POST',
+        headers: {'Content-Type' : 'application/json'},
+        body: JSON.stringify({ id })
+    })
+});

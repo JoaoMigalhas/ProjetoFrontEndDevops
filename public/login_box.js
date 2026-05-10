@@ -1,5 +1,5 @@
-let inputLogin = document.getElementById('inputLoginBox');
-let button = document.getElementById('buttonLoginBox');
+const inputLogin = document.getElementById('inputLoginBox');
+const button = document.getElementById('buttonLoginBox');
 
 button.addEventListener('click', async () => {
     let nickname = inputLogin.value.trim();
@@ -36,4 +36,4 @@ button.addEventListener('click', async () => {
     }
 
 
-})
+});
