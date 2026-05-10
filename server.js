@@ -13,4 +13,7 @@ app.use(express.json());
 import loginRoute from './routes/login_box.js';
 app.use(loginRoute);
 
+import movieName from './routes/movie_name.js';
+app.use(movieName);
+
 app.listen(PORT, () => {console.log(`Servidor rodando na porta ${PORT}`)});

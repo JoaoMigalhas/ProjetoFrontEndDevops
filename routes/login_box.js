@@ -2,7 +2,7 @@ import {readFile, writeFile} from 'fs/promises';
 import { Router } from 'express';
 
 const routes = Router();
-const LOGIN_DB_PATH = "./src/database/users.json";
+const LOGIN_DB_PATH = "./src/assets/data/users.json";
 
 routes.post('/api/login', async (req, res) => {
     const {nickname} = req.body;
@@ -28,9 +28,9 @@ routes.post('/api/login', async (req, res) => {
             }
         }
 
-        //se o nick já tiver sido cadastrado 
+        //se o nick já tiver sido cadastrado
         if(nicks.some(u => u.nickname === nickname)) {
-            return res.status(200).json({ message: `${nickname} já existe, login realizado com sucesso`});
+            return res.status(200).json({ message: `${nickname} logado com sucesso`});
         } else {
             //modelo de cadastro de novos usuários
             const newUser = {
