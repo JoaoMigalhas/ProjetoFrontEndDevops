@@ -16,4 +16,7 @@ app.use(loginRoute);
 import movieName from './routes/movie_name.js';
 app.use(movieName);
 
+import dicas from './routes/dicas.js';
+app.use(dicas);
+
 app.listen(PORT, () => {console.log(`Servidor rodando na porta ${PORT}`)});

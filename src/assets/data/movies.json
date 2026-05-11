@@ -1,14 +1,18 @@
 [{
     "id": 0,
     "filme": "matrix",
-    "genero": ["ficção ciêntífica", "ação"],
-    "sinopse": "Um hacker descobre que a realidade percebida pela humanidade é, na verdade, uma simulação digital criada por máquinas para subjugar a espécie. Ao se juntar a um grupo de rebeldes, ele deve decidir entre continuar na ilusão confortável ou encarar a dura verdade da resistência. Ele descobre possuir habilidades extraordinárias para manipular as regras desse mundo artificial, tornando-se a chave para a libertação final.",
+    "dica0": "Um escritório entediante esconde uma realidade construída por código",
+    "dica1": "A escolha entre dois caminhos é simbolizada pelas cores azul e vermelha",
+    "dica2": "O protagonista descobre que suas habilidades físicas são limitadas apenas pela mente",
+    "dica3": "Sentir um déjà vu é um sinal técnico de que algo foi alterado ao seu redor",
     "capa": "./src/assets/capa/matrix_capa.jpg"
 },
 {
     "id": 1,
     "filme": "o exterminador do futuro",
-    "genero": ["ficção ciêntífica", "ação"],
-    "sinopse": "Em um futuro dominado por máquinas, um ciborgue assassino é enviado ao passado para eliminar a mulher que dará à luz o líder da resistência humana. Para protegê-la, um soldado solitário também atravessa o tempo, iniciando uma perseguição implacável pelas ruas de Los Angeles. O destino da humanidade depende agora da sobrevivência de uma pessoa comum frente a uma ameaça tecnológica imparável.",
+    "dica0": "A tecnologia de amanhã viaja para impedir que um líder nasça hoje",
+    "dica1": "Há um inimigo de estrutura metálica implacável sob uma face humana",
+    "dica2": "A história gira em torno da Skynet",
+    "dica3": "Um ciborgue vindo do futuro usa óculos escuros para esconder um olho mecânico vermelho e brilhante",
     "capa": "./src/assets/capa/exterminador_capa_jpg"
 }]

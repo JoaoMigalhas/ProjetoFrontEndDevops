@@ -1,6 +1,6 @@
 const inputMovie = document.getElementById('inputNomeFilme');
 const buttonMovieName = document.getElementById('buttonNomeFilme');
-let respostaCorreta = "";
+let filmeSelecionado = "";
 
 //evento de sorteio do filme
 //o sorteio acontece apartir do momento que o usuário
@@ -19,7 +19,7 @@ button.addEventListener('click', async () => {
 
     //pegando o filme sorteado e passando para a var respostaCorreta
     const data = await response.json();
-    respostaCorreta = data.filmeSorteado;
+    filmeSelecionado = data.filmeSorteado;
 });
 
 //evento para validar se é o filme certo
@@ -30,6 +30,9 @@ buttonMovieName.addEventListener('click', async () => {
     const response = await fetch('api/nomeFilme', {
         method: 'POST',
         headers: {'Content-Type' : 'application/json'},
-        body: JSON.stringify( { filme , respostaCorreta, nickname } )
+        body: JSON.stringify( { filme , filmeSelecionado, nickname } )
     })
+
+    //limpando o imput a cada tentativa
+    inputMovie.value = "";
 });

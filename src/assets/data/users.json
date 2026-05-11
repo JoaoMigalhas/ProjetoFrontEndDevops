@@ -1,9 +1,16 @@
 [
   {
     "nickname": "TEST",
-    "score": 8,
-    "acertos": 2,
-    "erros": 3,
+    "score": 28,
+    "acertos": 7,
+    "erros": 9,
+    "dicas": 3
+  },
+  {
+    "nickname": "JOAO",
+    "score": 13,
+    "acertos": 1,
+    "erros": 0,
     "dicas": 3
   }
 ]
