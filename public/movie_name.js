@@ -6,7 +6,7 @@ let respostaCorreta = "";
 //o sorteio acontece apartir do momento que o usuário
 //logar no site
 button.addEventListener('click', async () => {
-    
+
     //sorteio do id
     const id = Math.floor(Math.random() * 2);
 
@@ -30,6 +30,6 @@ buttonMovieName.addEventListener('click', async () => {
     const response = await fetch('api/nomeFilme', {
         method: 'POST',
         headers: {'Content-Type' : 'application/json'},
-        body: JSON.stringify( { filme , respostaCorreta } )
+        body: JSON.stringify( { filme , respostaCorreta, nickname } )
     })
 });

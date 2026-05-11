@@ -1,5 +1,6 @@
 import { readFile } from 'fs/promises';
 import { Router } from 'express';
+import * as scoreUtils from './score.js';
 
 const routes = Router();
 const MOVIE_DB_PATH = "./src/assets/data/movies.json";
@@ -29,12 +30,14 @@ routes.post('/api/filmeSorteado', async (req, res) => {
 
 //rota para validar se o filme inserido pelo usuário foi o correto
 routes.post('/api/nomeFilme', async (req, res) => {
-    const { filme, respostaCorreta } = req.body;
+    const { filme, respostaCorreta, nickname } = req.body;
 
-    if(respostaCorreta == filme) {
-        return res.send('resposta correta'); //obvio que isso vai ser temporario
+    if(respostaCorreta === filme) {
+        scoreUtils.acerto(nickname);
+        return res.json({message: 'resposta correta'}); //resposta temporária
     } else {
-        return res.send('resposta incorreta');
+        scoreUtils.erro(nickname);
+        return res.json({message: 'resposta incorreta'}); //resposta temporária
     }
 });
 

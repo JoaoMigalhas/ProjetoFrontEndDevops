@@ -1,8 +1,9 @@
 const inputLogin = document.getElementById('inputLoginBox');
 const button = document.getElementById('buttonLoginBox');
+let nickname = "";
 
 button.addEventListener('click', async () => {
-    let nickname = inputLogin.value.trim();
+    nickname = inputLogin.value.trim();
 
     //validações de dados
     if(!/^[a-zA-Z0-9]{0,4}$/.test(nickname)) {
