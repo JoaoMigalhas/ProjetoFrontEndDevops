@@ -1,6 +1,6 @@
 import {readFile, writeFile} from 'fs/promises';
 
-const LOGIN_DB_PATH = "./src/assets/data/users.json";
+const LOGIN_DB_PATH = "./src/data/users.json";
 
 export async function readDatabaseLogin() {
     try {
@@ -18,7 +18,7 @@ export async function atualizarScore(user) {
 }
 
 export async function acerto(nickname) {
-    const users = await readDatabase();
+    const users = await readDatabaseLogin();
  
     const user = users.find(u => u.nickname === nickname);
 
@@ -31,7 +31,7 @@ export async function acerto(nickname) {
 }
 
 export async function erro(nickname) {
-    const users = await readDatabase();
+    const users = await readDatabaseLogin();
     
     const user = users.find(u => u.nickname === nickname)
 

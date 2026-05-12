@@ -17,9 +17,9 @@ button.addEventListener('click', async () => {
         body: JSON.stringify({id})
     })
 
-    //pegando o filme sorteado e passando para a var respostaCorreta
+    //pega o NOME do filmeSelecionado
     const data = await response.json();
-    filmeSelecionado = data.filmeSorteado;
+    filmeSelecionado = data.nomeFilmeSorteado;
 });
 
 //evento para validar se é o filme certo

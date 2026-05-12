@@ -3,7 +3,7 @@ import { Router } from 'express';
 import * as userUtils from '../userFunctions.js'
 
 const routes = Router();
-const LOGIN_DB_PATH = "./src/assets/data/users.json";
+const LOGIN_DB_PATH = "./src/data/users.json";
 
 routes.post('/api/login', async (req, res) => {
     const {nickname} = req.body;
