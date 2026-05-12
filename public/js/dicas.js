@@ -14,7 +14,7 @@ buttonDicas.addEventListener('click', async () => {
            dica = data.dica;
 
         } catch(err){
-            console.error(`erro ao pedir dicas: ${err}`);
+            alert('limite de dicas alcançado');
         }
     contadorDicas++;
     } else {
