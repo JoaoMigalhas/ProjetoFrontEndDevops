@@ -1,8 +1,7 @@
 const buttonDicas = document.getElementById('buttonDicas');
-let contadorDicas = 0;
+let contadorDicas = 1;
 
 buttonDicas.addEventListener('click', async () => {
-    contadorDicas++;
     if(contadorDicas <= 3) {
         try {
             const response = await fetch('/api/dicas', {
@@ -10,9 +9,14 @@ buttonDicas.addEventListener('click', async () => {
                 headers: {'Content-Type' : 'application/json'},
                 body: JSON.stringify({nickname, contadorDicas, filmeSelecionado})
             });
+
+           const data = await response.json();
+           dica = data.dica;
+
         } catch(err){
             console.error(`erro ao pedir dicas: ${err}`);
         }
+    contadorDicas++;
     } else {
         alert('Número máximo de dicas para esse filme reivindicado');
     }

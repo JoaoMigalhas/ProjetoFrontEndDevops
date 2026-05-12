@@ -1,10 +1,10 @@
 [
   {
     "nickname": "TEST",
-    "score": 21,
-    "acertos": 7,
+    "score": 30,
+    "acertos": 8,
     "erros": 10,
-    "dicas": 1
+    "dicas": 0
   },
   {
     "nickname": "JOAO",
@@ -15,6 +15,13 @@
   },
   {
     "nickname": "dfas",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "ABCD",
     "score": 0,
     "acertos": 0,
     "erros": 0,

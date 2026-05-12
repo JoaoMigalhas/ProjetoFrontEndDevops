@@ -1,5 +1,6 @@
-import {readFile, writeFile} from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 import { Router } from 'express';
+import * as userUtils from '../userFunctions.js'
 
 const routes = Router();
 const LOGIN_DB_PATH = "./src/assets/data/users.json";
@@ -18,39 +19,32 @@ routes.post('/api/login', async (req, res) => {
 
     //lendo o banco de dados
     let nicks = [];
-    try {
-        //guardando os nomes já cadastrados dentro da variável nicks
-        const raw = await readFile(LOGIN_DB_PATH, 'utf-8');
-        nicks = JSON.parse(raw);
+   
+    nicks = await userUtils.readDatabaseLogin();
+
+    //se o nick já tiver sido cadastrado
+    if(nicks.some(u => u.nickname === nickname)) {
+        return res.status(200).json({ message: `${nickname} logado com sucesso`});
+    } else {
+        //modelo de cadastro de novos usuários
+        const newUser = {
+            nickname: nickname,
+            score: 0,
+            acertos: 0,
+            erros: 0,
+            dicas: 3
+        }
+
+        nicks.push(newUser);
+
+        //salvando no banco de dados o novo usuário
+        try {
+            await writeFile(LOGIN_DB_PATH, JSON.stringify(nicks, null, 2), 'utf-8');
+            return res.status(201).json({ message: `${nickname} cadastrado com sucesso`});
         } catch (err) {
-            if (err.code == "ENOENT") {
-                return res.status(500).json({ message: `erro ao ler o banco de dados: ${err}` });
-            }
+            return res.status(500).json({ message: `não foi possível cadastrar ${nickname}: ${err}`});
         }
-
-        //se o nick já tiver sido cadastrado
-        if(nicks.some(u => u.nickname === nickname)) {
-            return res.status(200).json({ message: `${nickname} logado com sucesso`});
-        } else {
-            //modelo de cadastro de novos usuários
-            const newUser = {
-                nickname: nickname,
-                score: 0,
-                acertos: 0,
-                erros: 0,
-                dicas: 3
-            }
-
-            nicks.push(newUser);
-
-            //salvando no banco de dados o novo usuário
-            try {
-                await writeFile(LOGIN_DB_PATH, JSON.stringify(nicks, null, 2), 'utf-8');
-                return res.status(201).json({ message: `${nickname} cadastrado com sucesso`});
-            } catch (err) {
-                return res.status(500).json({ message: `não foi possível cadastrar ${nickname}: ${err}`});
-            }
-        }
-    });
+    }
+});
 
 export default routes;

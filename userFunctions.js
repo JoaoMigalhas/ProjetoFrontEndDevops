@@ -2,13 +2,13 @@ import {readFile, writeFile} from 'fs/promises';
 
 const LOGIN_DB_PATH = "./src/assets/data/users.json";
 
-export async function readDatabase() {
+export async function readDatabaseLogin() {
     try {
         const raw = await readFile(LOGIN_DB_PATH, 'utf-8');
         return JSON.parse(raw);
     } catch(err) {
         if(err.code == 'ENOENT') {
-            console.log('erro ao ler o banco de dados ao salvar os acertos do usuário');
+            return res.status(500).json({ message: `erro ao ler o banco de dados: ${err}` });
         }
     }
 }

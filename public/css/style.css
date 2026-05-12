@@ -43,10 +43,16 @@
 }
 
 .card-dicas {
+    flex-wrap: wrap;
+    flex-direction: column;
     color: #fff;
     padding: 10px 16px;
     font-size: 1rem;
     margin: 0px;
+}
+
+.dicas {
+    text-align: center;
 }
 
 body {

@@ -4,6 +4,7 @@ import * as userUtils from '../userFunctions.js';
 
 const routes = Router();
 const LOGIN_DB_PATH = "./src/assets/data/users.json";
+const MOVIE_DB_PATH = "./src/assets/data/movies.json";
 
 routes.post('/api/dicas', async (req, res) => {
     const {nickname, contadorDicas, filmeSelecionado} = req.body;
@@ -20,8 +21,14 @@ routes.post('/api/dicas', async (req, res) => {
         await writeFile(LOGIN_DB_PATH, JSON.stringify(users, null, 2), 'utf-8');
 
         //pegando a dica que o usuário requisitou
+        const readMovie  = readFile(MOVIE_DB_PATH, 'utf-8');
+        const filmes = JSON.parse(readMovie);
 
-        res.sendStatus(200);
+        //resgatando o objeto inteiro do filme selecionado
+        const objFilmeSelecionado = filmes.find(f => f.filme = filmeSelecionado);
+        //resgatando a dica com base em quantas dicas o usuário já requisitou no front-end
+        const dicaSelecionada = objFilmeSelecionado.dica[contadorDicas];
+        res.send.json({ dica: dicaSelecionada });
     } else {
         res.sendStatus(400);
     }

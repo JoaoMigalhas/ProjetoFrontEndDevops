@@ -1,18 +1,22 @@
 [{
     "id": 0,
     "filme": "matrix",
-    "dica0": "Um escritório entediante esconde uma realidade construída por código",
-    "dica1": "A escolha entre dois caminhos é simbolizada pelas cores azul e vermelha",
-    "dica2": "O protagonista descobre que suas habilidades físicas são limitadas apenas pela mente",
-    "dica3": "Sentir um déjà vu é um sinal técnico de que algo foi alterado ao seu redor",
+    "dica":[
+        "Um escritório entediante esconde uma realidade construída por código",
+        "A escolha entre dois caminhos é simbolizada pelas cores azul e vermelha",
+        "O protagonista descobre que suas habilidades físicas são limitadas apenas pela mente",
+        "Sentir um déjà vu é um sinal técnico de que algo foi alterado ao seu redor"
+    ],
     "capa": "./src/assets/capa/matrix_capa.jpg"
 },
 {
     "id": 1,
     "filme": "o exterminador do futuro",
-    "dica0": "A tecnologia de amanhã viaja para impedir que um líder nasça hoje",
-    "dica1": "Há um inimigo de estrutura metálica implacável sob uma face humana",
-    "dica2": "A história gira em torno da Skynet",
-    "dica3": "Um ciborgue vindo do futuro usa óculos escuros para esconder um olho mecânico vermelho e brilhante",
+    "dica": [
+        "A tecnologia de amanhã viaja para impedir que um líder nasça hoje",
+        "Há um inimigo de estrutura metálica implacável sob uma face humana",
+        "A história gira em torno da Skynet",
+        "Um ciborgue vindo do futuro usa óculos escuros para esconder um olho mecânico vermelho e brilhante"
+    ],
     "capa": "./src/assets/capa/exterminador_capa_jpg"
 }]
