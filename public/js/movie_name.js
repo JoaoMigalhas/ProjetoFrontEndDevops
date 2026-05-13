@@ -1,5 +1,6 @@
 const inputMovie = document.getElementById('inputNomeFilme');
 const buttonMovieName = document.getElementById('buttonNomeFilme');
+const dataList = document.getElementById('datalistNomeFilme');
 let filmeSelecionado = "";
 
 //evento de sorteio do filme
@@ -36,3 +37,25 @@ buttonMovieName.addEventListener('click', async () => {
     //limpando o imput a cada tentativa
     inputMovie.value = "";
 });
+
+//datalist
+inputMovie.addEventListener('focus', async () => {
+    dataList.innerHTML = "";
+
+    const response = await fetch('/api/filmes');
+
+    const movies = await response.json();
+    movies.filmes.forEach(movie => {
+        const option = document.createElement('option');
+        option.value = movie;
+        dataList.appendChild(option);
+    });
+});
+
+//o enter funciona como enviar
+inputMovie.addEventListener('keydown', () => {
+    if(event.key === 'Enter') {
+        event.preventDefault();
+        buttonMovieName.click();
+    }
+})

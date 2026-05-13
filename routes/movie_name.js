@@ -33,4 +33,16 @@ routes.post('/api/nomeFilme', async (req, res) => {
     }
 });
 
+//rota para retornar os filmes da aplicação
+routes.get('/api/filmes', async (req, res) => {
+    const data = await movieUtils.readDatabaseMovie();
+
+    let filmes = [];
+    for(const nomeFilme of data) {
+        filmes.push(nomeFilme.filme);
+    }
+
+    res.status(200).json({ filmes: filmes });
+});
+
 export default routes;
