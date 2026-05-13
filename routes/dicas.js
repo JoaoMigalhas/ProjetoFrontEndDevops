@@ -8,6 +8,15 @@ const routes = Router();
 const LOGIN_DB_PATH = "./src/data/users.json";
 const MOVIE_DB_PATH = "./src/data/movies.json";
 
+routes.post('/api/dicaInicial', async (req, res) => {
+    const {filmeSelecionado} = req.body;
+    const data = await movieUtils.readDatabaseMovie();
+    
+    const objFilme = data.find(f => f.filme == filmeSelecionado);
+    const dica = objFilme.dica[0];
+    res.status(200).json({ dicaInicial: dica });
+});
+
 routes.post('/api/dicas', async (req, res) => {
     const {nickname, contadorDicas, filmeSelecionado} = req.body;
 
@@ -33,6 +42,6 @@ routes.post('/api/dicas', async (req, res) => {
     } else {
         res.sendStatus(400); //dará bad request se o usuário não ter mais dicas disponíveis
     }
-})
+});
 
 export default routes;
