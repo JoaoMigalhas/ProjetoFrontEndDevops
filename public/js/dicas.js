@@ -7,7 +7,7 @@ buttonDicas.addEventListener('click', async () => {
             const response = await fetch('/api/dicas', {
                 method: 'POST',
                 headers: {'Content-Type' : 'application/json'},
-                body: JSON.stringify({nickname, contadorDicas, filmeSelecionado})
+                body: JSON.stringify({nickname, contadorDicas, objFilmeSorteado})
             });
 
            const data = await response.json();

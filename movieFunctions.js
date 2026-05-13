@@ -2,6 +2,7 @@ import {readFile, writeFile} from 'fs/promises';
 
 const MOVIE_DB_PATH = "./src/data/movies.json";
 
+//leitura do banco de dados de filmes
 export async function readDatabaseMovie() {
     try {
         const raw = await readFile(MOVIE_DB_PATH, 'utf-8');
@@ -12,3 +13,14 @@ export async function readDatabaseMovie() {
         }
     }
 }
+
+//função para sortear um filme
+export async function sortearFilme() {
+    //lendo o banco de dados
+    let movies = await readDatabaseMovie();
+
+    const id = Math.floor(Math.random() * movies.length);
+
+    //sorteando com algum filme para a variavel movies
+    return movies[id];
+};

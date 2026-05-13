@@ -2,7 +2,7 @@ const inputMovie = document.getElementById('inputNomeFilme');
 const buttonMovieName = document.getElementById('buttonNomeFilme');
 const dataList = document.getElementById('datalistNomeFilme');
 const cardDicas = document.querySelector('.card-dicas');
-let filmeSelecionado = "";
+let objFilmeSorteado = "";
 
 //evento de sorteio do filme
 //o sorteio acontece apartir do momento que o usuário
@@ -11,24 +11,19 @@ button.addEventListener('click', async () => {
 
     try {
         //sorteio do id
-        const id = Math.floor(Math.random() * 2);
 
         //envia o número sorteado para a rota que vai puxar do BD qual filme foi sorteado
-        const response = await fetch('/api/filmeSorteado', {
-            method: 'POST',
-            headers: {'Content-Type' : 'application/json'},
-            body: JSON.stringify({id})
-        })
+        const response = await fetch('/api/filmeSorteado');
 
         //pega o NOME do filmeSelecionado
         const data = await response.json();
-        filmeSelecionado = data.nomeFilmeSorteado;
+        objFilmeSorteado = data.objFilmeSorteado;
 
         if(response.ok) {
             const response = await fetch('/api/dicaInicial', {
             method: 'POST',
             headers: {'Content-Type' : 'application/json'},
-            body: JSON.stringify({ filmeSelecionado })
+            body: JSON.stringify({ objFilmeSorteado })
             })
 
             const dataDica = await response.json();
@@ -52,7 +47,7 @@ buttonMovieName.addEventListener('click', async () => {
     const response = await fetch('api/nomeFilme', {
         method: 'POST',
         headers: {'Content-Type' : 'application/json'},
-        body: JSON.stringify( { filme , filmeSelecionado, nickname } )
+        body: JSON.stringify( { filme , objFilmeSorteado, nickname } )
     })
 
     //limpando o imput a cada tentativa

@@ -6,25 +6,20 @@ import * as movieUtils from '../movieFunctions.js';
 const routes = Router();
 
 //rota do sorteio do filme
-routes.post('/api/filmeSorteado', async (req, res) => {
-    const {id} = req.body;
-
-    //lendo o banco de dados
-    let movies = await movieUtils.readDatabaseMovie();
-
-    //sorteando com algum filme para a variavel movies
-    if(movies.some(m => m.id === id)) {
-        return res.status(200).json({ nomeFilmeSorteado: movies[id].filme });
+routes.get('/api/filmeSorteado', async (req, res) => {
+    const movie = await movieUtils.sortearFilme();
+    if(movie) {
+        res.status(200).json({ objFilmeSorteado: movie });
     } else {
-        return res.status(400).json({ message: `erro com o numero ${id} sorteado`});
+        res.sendStatus(404);
     }
 });
 
 //rota para validar se o filme inserido pelo usuário foi o correto
 routes.post('/api/nomeFilme', async (req, res) => {
-    const { filme, filmeSelecionado, nickname } = req.body;
+    const { filme, objFilmeSorteado, nickname } = req.body;
 
-    if(filmeSelecionado == filme) {
+    if(objFilmeSorteado.filme == filme) {
         userUtils.acerto(nickname);
         return res.json({message: 'resposta correta'}); //resposta temporária
     } else {

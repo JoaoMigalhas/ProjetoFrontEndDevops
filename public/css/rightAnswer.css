@@ -1,0 +1,11 @@
+.card-jogo{
+    border-radius: 16px;
+    background-color: rgb(108, 101, 101);
+    padding: 32px;
+    width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
