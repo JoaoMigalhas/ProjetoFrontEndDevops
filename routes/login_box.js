@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'fs/promises';
+import { writeFile } from 'fs/promises';
 import { Router } from 'express';
 import * as userUtils from '../userFunctions.js'
 
