@@ -68,5 +68,12 @@
     "acertos": 1,
     "erros": 1,
     "dicas": 0
+  },
+  {
+    "nickname": "joao",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
   }
 ]
