@@ -1,8 +1,8 @@
 [
   {
     "nickname": "TEST",
-    "score": 35,
-    "acertos": 9,
+    "score": 45,
+    "acertos": 10,
     "erros": 11,
     "dicas": 0
   },
@@ -26,5 +26,12 @@
     "acertos": 0,
     "erros": 0,
     "dicas": 3
+  },
+  {
+    "nickname": "IGHI",
+    "score": 2,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 2
   }
 ]

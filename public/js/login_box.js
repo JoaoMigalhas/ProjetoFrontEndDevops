@@ -35,5 +35,4 @@ button.addEventListener('click', async () => {
     } catch (networkError) {
         console.log(`Não foi possível se conectar ao servidor: ${networkError}`);
     }
-
 });

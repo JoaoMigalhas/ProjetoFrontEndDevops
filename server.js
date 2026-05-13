@@ -19,4 +19,7 @@ app.use(movieName);
 import dicas from './routes/dicas.js';
 app.use(dicas);
 
+import score from './routes/score.js';
+app.use(score);
+
 app.listen(PORT, () => {console.log(`Servidor rodando na porta ${PORT}`)});
