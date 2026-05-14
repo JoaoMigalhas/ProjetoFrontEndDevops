@@ -5,5 +5,19 @@
     "acertos": 12,
     "erros": 57,
     "dicas": 0
+  },
+  {
+    "nickname": "",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 0
+  },
+  {
+    "nickname": "asda",
+    "score": 45,
+    "acertos": 5,
+    "erros": 1,
+    "dicas": 0
   }
 ]
