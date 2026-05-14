@@ -28,7 +28,7 @@
     font-weight: bold;
     letter-spacing: 4px;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0; 
 }
 
 .card-jogo input[type="text"] {

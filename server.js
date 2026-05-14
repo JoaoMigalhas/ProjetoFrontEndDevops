@@ -22,4 +22,7 @@ app.use(dicas);
 import score from './routes/score.js';
 app.use(score);
 
+import correctAnswer from './routes/correctAnswer.js';
+app.use(correctAnswer);
+
 app.listen(PORT, () => {console.log(`Servidor rodando na porta ${PORT}`)});

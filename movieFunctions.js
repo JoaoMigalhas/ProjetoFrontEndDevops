@@ -1,4 +1,4 @@
-import {readFile, writeFile} from 'fs/promises';
+import { readFile } from 'node:fs/promises';
 
 const MOVIE_DB_PATH = "./src/data/movies.json";
 

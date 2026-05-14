@@ -1,44 +1,27 @@
-.login {
+.correct-answer{
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
+    display: none;
 
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    z-index: 10;
     background-color: rgb(0, 0, 0);
 }
 
-.loginBox {
+.card-acerto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 
+    border-radius: 16px;
     background-color: rgb(108, 101, 101);
-    border-radius: 20px;
-    width: 90%;
-    height: 90%;
-
-    max-width: 700px;
-    max-height: 400px;
-}
-
-.txtTag {
-    font-size: 2rem;
-}
-
-#inputLoginBox {
-    text-align: center;
-    font-size: 2rem;
-}
-
-#buttonLoginBox {
-    border: none;
-    border-radius: 20px;
-    width: 300px;
+    padding: 32px;
+    width: 600px;
+    margin: 40px auto;
 }

@@ -1,18 +1,21 @@
+//elementos do html
 const inputMovie = document.getElementById('inputNomeFilme');
 const buttonMovieName = document.getElementById('buttonNomeFilme');
 const dataList = document.getElementById('datalistNomeFilme');
 const cardDicas = document.querySelector('.card-dicas');
+const divNomeFilme = document.querySelector('.nome-filme');
+const divAnswer = document.querySelector('.correct-answer');
+
+
 let objFilmeSorteado = "";
 
 //evento de sorteio do filme
 //o sorteio acontece apartir do momento que o usuário
 //logar no site
-button.addEventListener('click', async () => {
 
+//tornando reutilizavel o sorteio do filme
+async function sortearFront() {
     try {
-        //sorteio do id
-
-        //envia o número sorteado para a rota que vai puxar do BD qual filme foi sorteado
         const response = await fetch('/api/filmeSorteado');
 
         //pega o NOME do filmeSelecionado
@@ -37,6 +40,11 @@ button.addEventListener('click', async () => {
     } catch(err) {
         console.error(`deu erro ai: ${err}`);
     }
+};
+
+button.addEventListener('click', async () => {
+    //sorteando um novo filme
+    sortearFront();
 });
     
 //evento para validar se é o filme certo
@@ -52,8 +60,16 @@ buttonMovieName.addEventListener('click', async () => {
 
     //limpando o imput a cada tentativa
     inputMovie.value = "";
-});
 
+    const data = await response.json();
+    const dataResposta = data.message;
+
+    if(dataResposta == "resposta correta") {
+        divNomeFilme.innerHTML = `<p>${objFilmeSorteado.filme}</p>`
+        divAnswer.style.display = "block";
+    }
+
+});
 //datalist
 inputMovie.addEventListener('focus', async () => {
     dataList.innerHTML = "";

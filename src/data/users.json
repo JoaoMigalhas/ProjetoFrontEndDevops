@@ -2,71 +2,8 @@
   {
     "nickname": "TEST",
     "score": -165,
-    "acertos": 11,
-    "erros": 55,
-    "dicas": 0
-  },
-  {
-    "nickname": "JOAO",
-    "score": 10,
-    "acertos": 1,
-    "erros": 0,
-    "dicas": 0
-  },
-  {
-    "nickname": "dfas",
-    "score": 0,
-    "acertos": 0,
-    "erros": 0,
-    "dicas": 0
-  },
-  {
-    "nickname": "ABCD",
-    "score": 0,
-    "acertos": 0,
-    "erros": 0,
-    "dicas": 3
-  },
-  {
-    "nickname": "IGHI",
-    "score": 2,
-    "acertos": 0,
-    "erros": 0,
-    "dicas": 2
-  },
-  {
-    "nickname": "aaaa",
-    "score": 0,
-    "acertos": 0,
-    "erros": 0,
-    "dicas": 0
-  },
-  {
-    "nickname": "hguy",
-    "score": 0,
-    "acertos": 0,
-    "erros": 0,
-    "dicas": 3
-  },
-  {
-    "nickname": "",
-    "score": 0,
-    "acertos": 0,
-    "erros": 0,
-    "dicas": 3
-  },
-  {
-    "nickname": "tes1",
-    "score": 7,
-    "acertos": 1,
-    "erros": 1,
-    "dicas": 2
-  },
-  {
-    "nickname": "bobo",
-    "score": 5,
-    "acertos": 1,
-    "erros": 1,
+    "acertos": 12,
+    "erros": 57,
     "dicas": 0
   }
 ]
