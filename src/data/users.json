@@ -5,5 +5,19 @@
     "acertos": 12,
     "erros": 57,
     "dicas": 0
+  },
+  {
+    "nickname": "joao",
+    "score": -3,
+    "acertos": 0,
+    "erros": 1,
+    "dicas": 2
+  },
+  {
+    "nickname": "AAAA",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
   }
 ]
