@@ -6,31 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/login_box.css">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/moviedle.css">
         <link rel="stylesheet" href="./css/correctAnswer.css">
         <link rel="stylesheet" href="./css/welcome.css">
+        <link rel="stylesheet" href="./css/dicas.css">
         <title>Moviedle</title>
     </head>
 
     <body>
-        <div class="login">
-            <div class="loginBox">
-                <p class="txtTag">Insira sua tag de jogador!</p>
-                <input type="text" id="inputLoginBox" placeholder="AAAA" maxlength="4">
-                <button id="buttonLoginBox">OK</button>
+        <header class="topo-jogo">
+            <div class="timer">
             </div>
-        </div>
-        <div class="welcome">
-            <div class="welcomeBox">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem tenetur unde voluptatum sunt nemo nobis, odio perspiciatis nostrum est. Modi doloribus magni cum at illum nulla animi sit aspernatur.</p>
-            <button id="buttonWelcomeBox">OK</button>
-        </div>
-        </div>
-        <main class="card-jogo">
             <div class="titulo">
                 <h1>Moviedle</h1>
             </div>
+            <a href="score.html" class="btn-voltar-score">Score</a>
+        </header>
+        <div class="card-dicas">
+        </div>
+        <main class="card-jogo">
             <div class="subtitulo">
                 <h2>Descubra o filme com base nas dicas!!</h2>
             </div>
@@ -42,29 +37,40 @@
             </datalist>
             <button id="buttonNomeFilme">Enviar</button>
             <button id="buttonDicas">Dicas</button>
-            <a href="score.html" class="btn-voltar-score">Ir para o score!</a>
         </main>
-        <div class="card-dicas">
+
+
+        <div class="login">
+            <div class="loginBox">
+                <p class="txtTag">Insira sua tag de jogador!</p>
+                <input type="text" id="inputLoginBox" placeholder="AAAA" maxlength="4">
+                <button id="buttonLoginBox">OK</button>
+            </div>
+        </div>
+        <div class="welcome">
+            <div class="welcomeBox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem tenetur unde voluptatum sunt nemo nobis, odio perspiciatis nostrum est. Modi doloribus magni cum at illum nulla animi sit aspernatur.</p>
+            <button id="buttonWelcomeBox">OK</button>
+            </div>
         </div>
         <div class="correct-answer">
             <div class="card-acerto">
-                <div class="correctAnswer">
-                <h1 class="text-white">Pabéns, você acertou!</h1>
+                <h1>Pabéns, você acertou!</h1>
                 <div class="nome-filme">
 
                 </div>
                 <button id="buttonScore">Score</button>
                 <button id="buttonProxFilme">Próximo filme</button>
             </div>
-            </div>
         </div>
-        <div class="timer">
-        </div>
+
+        <script src="./js/functions/htmlElements.js"></script>
         <script src="./js/login_box.js"></script>
         <script src="./js/movie_name.js"></script>
+        <script src="./js/functions/movieFunctions.js"></script>
         <script src="./js/dicas.js"></script>
         <script src="./js/correctAnswer.js"></script>
-        <script src="./js/timerFunctions.js"></script>
+        <script src="./js/functions/timerFunctions.js"></script>
     </body>
 
     </html>

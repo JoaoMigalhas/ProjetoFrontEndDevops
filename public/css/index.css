@@ -1,0 +1,105 @@
+* {
+    font-family:'Century Gothic', CenturyGothic, sans-serif;
+}
+
+body {
+    /* Camada 1: Gradiente preto 50% transparente | Camada 2: Imagem de fundo do cinema */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/cinema_background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* MODIFICADO: Adicionado fundo preto e borda para bloquear a imagem atrás */
+.topo-jogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: black; /* Impede a imagem de aparecer atrás */
+    border-bottom: 4px solid #000; /* Borda preta separadora */
+}
+
+/* Garante que o timer e o botão tenham larguras equivalentes para centralizar o título perfeitamente */
+.timer, .topo-jogo .btn-voltar-score {
+    width: 180px; 
+}
+
+/* Alinha o texto do cronômetro estritamente à esquerda */
+.timer {
+    color: white; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Alinha o texto do botão centralizado no espaço dele */
+.topo-jogo .btn-voltar-score {
+    text-align: center;
+}
+
+.card-jogo{
+    border-radius: 16px;
+    background-color: rgb(108, 101, 101);
+    padding: 32px;
+    width: 600px;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.card-jogo button {
+    background-color: #b5a7a7;
+    color: black;
+    border: 2px;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.titulo {
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0; 
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.card-jogo input[type="text"] {
+    background-color: #b5a7a7;
+    color: black;
+    border: 2px solid #fffbfb;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+}
+
+.btn-voltar-score{
+    color: black;
+    background-color: #b5a7a7;
+    border: 2px solid #b5a7a7;
+    border-radius: 24px;
+    padding: 10px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}

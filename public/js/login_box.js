@@ -1,5 +1,3 @@
-const inputLogin = document.getElementById('inputLoginBox');
-const button = document.getElementById('buttonLoginBox');
 let nickname = "";
 
 button.addEventListener('click', async () => {
