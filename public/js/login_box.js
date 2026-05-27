@@ -1,20 +1,16 @@
 let nickname = "";
-
 button.addEventListener('click', async () => {
     nickname = inputLogin.value.trim();
 
-    //validações de dados
     if(!/^[a-zA-Z0-9]{0,4}$/.test(nickname)) {
         window.alert('O nickname deve ter entre 0 a 4 caracteres válidos!');
         return;
     }
-
     if(typeof nickname != 'string') {
         window.alert('O valor inserido deve ser uma string');
         return;
     }
 
-    //enviando para a rota api/login
     try {
         const response = await fetch('/api/login', {
             method: 'POST',
@@ -22,20 +18,18 @@ button.addEventListener('click', async () => {
             body: JSON.stringify({nickname})
         });
 
-        //fechando a div login
+        const data = await response.json();
+
         if (response.ok) {
             let divLogin = document.querySelector(".login");
             divLogin.style.display = "none";
+
+            if (data.message === 'cadastrado com sucesso') {
+                pausarTimer();
+                divWelcome.style.display = "flex";
+            }
         } else {
             alert('Erro ao logar');
-        }
-
-        const data = await response.json();
-        const dataResponse = data.message;
-
-        if (dataResponse == 'cadastrado com sucesso') {
-            pausarTimer();
-            divWelcome.style.display = "flex";
         }
 
     } catch (networkError) {
