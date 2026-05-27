@@ -14,7 +14,7 @@ export async function readDatabaseMovie() {
     }
 }
 
-//função para sortear um filme
+//função para sortear um filme no back-end
 export async function sortearFilme() {
     //lendo o banco de dados
     let movies = await readDatabaseMovie();

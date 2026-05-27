@@ -7,6 +7,7 @@ const PORT = 3000;
 //middlewares
 app.use(cors());
 app.use(express.static('./public'));
+app.use(express.static('./src/images'));
 app.use(express.json());
 
 //rotas

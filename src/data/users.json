@@ -8,9 +8,9 @@
   },
   {
     "nickname": "",
-    "score": 0,
-    "acertos": 0,
-    "erros": 0,
+    "score": -70,
+    "acertos": 1,
+    "erros": 16,
     "dicas": 0
   },
   {
@@ -18,6 +18,13 @@
     "score": 45,
     "acertos": 5,
     "erros": 1,
+    "dicas": 0
+  },
+  {
+    "nickname": "srge",
+    "score": 10,
+    "acertos": 1,
+    "erros": 0,
     "dicas": 0
   }
 ]
