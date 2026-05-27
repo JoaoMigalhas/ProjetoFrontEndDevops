@@ -1,15 +1,17 @@
 const timer = document.querySelector('.timer');
 
 let tempoRestante;
+let intervalo;
 
 function pausarTimer() {
-    
+    clearInterval(intervalo);
 }
 
 function inicializarTimer() {
+    clearInterval(intervalo);
     tempoRestante = 20;
     
-    const intervalo = setInterval(() => {
+    intervalo = setInterval(() => {
  
     let minutos = Math.floor(tempoRestante / 60);
     let segundos = tempoRestante % 60;

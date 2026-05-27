@@ -32,6 +32,14 @@ button.addEventListener('click', async () => {
             alert('Erro ao logar');
         }
 
+        const data = await response.json();
+        const dataResponse = data.message;
+
+        if (dataResponse == 'cadastrado com sucesso') {
+            pausarTimer();
+            divWelcome.style.display = "flex";
+        }
+
     } catch (networkError) {
         console.log(`Não foi possível se conectar ao servidor: ${networkError}`);
     }

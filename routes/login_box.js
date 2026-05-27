@@ -24,7 +24,7 @@ routes.post('/api/login', async (req, res) => {
 
     //se o nick já tiver sido cadastrado
     if(nicks.some(u => u.nickname === nickname)) {
-        return res.status(200).json({ message: `${nickname} logado com sucesso`});
+        return res.status(200).json({ message: `logado com sucesso`});
     } else {
         //modelo de cadastro de novos usuários
         const newUser = {
@@ -40,7 +40,7 @@ routes.post('/api/login', async (req, res) => {
         //salvando no banco de dados o novo usuário
         try {
             await writeFile(LOGIN_DB_PATH, JSON.stringify(nicks, null, 2), 'utf-8');
-            return res.status(201).json({ message: `${nickname} cadastrado com sucesso`});
+            return res.status(201).json({ message: `cadastrado com sucesso`});
         } catch (err) {
             return res.status(500).json({ message: `não foi possível cadastrar ${nickname}: ${err}`});
         }

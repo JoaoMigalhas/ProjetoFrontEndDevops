@@ -1,5 +1,5 @@
-.login {
-    display: flex;
+.welcome {
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -8,11 +8,11 @@
     left: 0px;
     height: 100%;
     width: 100%;
-    z-index: 20;
+    z-index: 10;
     background-color: rgb(0, 0, 0);
 }
 
-.loginBox {
+.welcomeBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,16 +28,7 @@
     max-height: 400px;
 }
 
-.txtTag {
-    font-size: 2rem;
-}
-
-#inputLoginBox {
-    text-align: center;
-    font-size: 2rem;
-}
-
-#buttonLoginBox {
+#buttonWelcomeBox {
     border: none;
     border-radius: 20px;
     width: 300px;

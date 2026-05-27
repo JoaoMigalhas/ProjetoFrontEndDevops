@@ -6,6 +6,8 @@ const cardDicas = document.querySelector('.card-dicas');
 const cardMoviedle = document.querySelector('.card-moviedle');
 const divNomeFilme = document.querySelector('.nome-filme');
 const divAnswer = document.querySelector('.correct-answer');
+const divWelcome = document.querySelector('.welcome');
+const buttonWelcomeBox = document.getElementById('buttonWelcomeBox');
 
 let objFilmeSorteado = "";
 
@@ -114,6 +116,16 @@ switch (comparacao_qntd_filmes) {
 //o sorteio acontece apartir do momento que o usuário
 //logar no site
 button.addEventListener('click', async () => {
+    //sorteando um novo filme
+    inicializarTimer();
+    sortearFront();
+});
+
+
+buttonWelcomeBox.addEventListener('click', async () => {
+    //fechando a div de boas vindas
+    divWelcome.style.display = "none";
+    
     //sorteando um novo filme
     inicializarTimer();
     sortearFront();

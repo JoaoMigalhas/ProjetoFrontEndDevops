@@ -8,9 +8,9 @@
   },
   {
     "nickname": "",
-    "score": -70,
-    "acertos": 1,
-    "erros": 16,
+    "score": -65,
+    "acertos": 2,
+    "erros": 17,
     "dicas": 0
   },
   {
@@ -26,5 +26,40 @@
     "acertos": 1,
     "erros": 0,
     "dicas": 0
+  },
+  {
+    "nickname": "abcd",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "9oud",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "9ouc",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "9out",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "9oup",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
   }
 ]
