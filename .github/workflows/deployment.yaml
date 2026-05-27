@@ -1,0 +1,37 @@
+name: continuos-deployment
+run-name: Deploy 
+on:
+  pull request:
+      branches:
+        - main
+jobs:
+  deploy:
+      name: deploy
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v6.0.2
+          with:
+            fetch-depth: 0
+
+        - name: Docker login
+          uses: docker/login-action@v4.2.0
+          with:
+            username: ${{ secrets.DOCKER_LOGIN }}
+            password: ${{ secrets.DOCKER_PASSWORD }}
+
+        - name: Docker Build and push
+          uses: docker/build-push-action@v7.2.0
+          with:
+            context: .
+            file: ./Dockerfile
+            push: true
+            tags: joaomigalhas/projeto-devops:latest
+
+        - name: Azure Deploy
+          uses: Azure/webapps-deploy@v2.2.19
+          with: 
+            app-name: moviedle
+            publish-profile: ${{ secrets.PUBLISH_PROFILE}}
+            image: joaomigalhas/projeto-devops:latest

@@ -10,8 +10,12 @@ buttonDicas.addEventListener('click', async () => {
                 body: JSON.stringify({nickname, contadorDicas, objFilmeSorteado})
             });
 
-           const data = await response.json();
-           dica = data.dica;
+            const data = await response.json();
+            dica = data.dica;
+
+            cardDicas.innerHTML += (`
+                <p class="dicas">${dica}</p>
+            `);
 
         } catch(err){
             alert('limite de dicas alcançado');

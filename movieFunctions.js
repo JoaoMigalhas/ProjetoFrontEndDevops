@@ -1,4 +1,4 @@
-import {readFile, writeFile} from 'fs/promises';
+import { readFile } from 'node:fs/promises';
 
 const MOVIE_DB_PATH = "./src/data/movies.json";
 
@@ -14,7 +14,7 @@ export async function readDatabaseMovie() {
     }
 }
 
-//função para sortear um filme
+//função para sortear um filme no back-end
 export async function sortearFilme() {
     //lendo o banco de dados
     let movies = await readDatabaseMovie();

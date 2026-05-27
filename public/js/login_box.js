@@ -1,5 +1,3 @@
-const inputLogin = document.getElementById('inputLoginBox');
-const button = document.getElementById('buttonLoginBox');
 let nickname = "";
 
 button.addEventListener('click', async () => {
@@ -30,6 +28,14 @@ button.addEventListener('click', async () => {
             divLogin.style.display = "none";
         } else {
             alert('Erro ao logar');
+        }
+
+        const data = await response.json();
+        const dataResponse = data.message;
+
+        if (dataResponse == 'cadastrado com sucesso') {
+            pausarTimer();
+            divWelcome.style.display = "flex";
         }
 
     } catch (networkError) {

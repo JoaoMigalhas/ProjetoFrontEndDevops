@@ -7,6 +7,7 @@ const PORT = 3000;
 //middlewares
 app.use(cors());
 app.use(express.static('./public'));
+app.use(express.static('./src/images'));
 app.use(express.json());
 
 //rotas
@@ -21,5 +22,8 @@ app.use(dicas);
 
 import score from './routes/score.js';
 app.use(score);
+
+import correctAnswer from './routes/correctAnswer.js';
+app.use(correctAnswer);
 
 app.listen(PORT, () => {console.log(`Servidor rodando na porta ${PORT}`)});

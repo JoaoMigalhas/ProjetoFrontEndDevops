@@ -23,8 +23,15 @@ routes.post('/api/nomeFilme', async (req, res) => {
         userUtils.acerto(nickname);
         return res.json({message: 'resposta correta'}); //resposta temporária
     } else {
+        //buscando o objeto completo do filme inserido pelo usuário
+        const filmes = await movieUtils.readDatabaseMovie();
+        const filmeUsuario = filmes.find(f => f.filme == filme);
+
         userUtils.erro(nickname);
-        return res.json({message: 'resposta incorreta'}); //resposta temporária
+        return res.json({
+            message: 'resposta incorreta',
+            objFilmeUsuario: filmeUsuario
+        }); 
     }
 });
 
