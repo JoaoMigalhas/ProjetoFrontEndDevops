@@ -1,0 +1,26 @@
+[{
+    "id": 0,
+    "filme": "matrix",
+    "genêro": ["ficção científica", "ação"],
+    "ano_lancamento": 1999,
+    "qntd_filmes": 4,
+    "dica":[
+        "Um escritório entediante esconde uma realidade construída por código",
+        "A escolha entre dois caminhos é simbolizada pelas cores azul e vermelha",
+        "O protagonista descobre que suas habilidades físicas são limitadas apenas pela mente",
+        "Sentir um déjà vu é um sinal técnico de que algo foi alterado ao seu redor"
+    ]
+},
+{
+    "id": 1,
+    "filme": "o exterminador do futuro",
+    "genêro": ["ficção científica", "ação"],
+    "ano_lancamento": 1985,
+    "qntd_filmes": 6,
+    "dica": [
+        "A tecnologia de amanhã viaja para impedir que um líder nasça hoje",
+        "Há um inimigo de estrutura metálica implacável sob uma face humana",
+        "A história gira em torno da Skynet",
+        "Um ciborgue vindo do futuro usa óculos escuros para esconder um olho mecânico vermelho e brilhante"
+    ]
+}]

@@ -1,0 +1,18 @@
+.card-dicas {
+    display: flex; /* Adicionado para ativar o flexbox se contiver itens */
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #fff;
+    padding: 16px;
+    font-size: 1rem;
+    margin: 20px auto;
+    max-width: 1000px; /* Alinha o tamanho com o .card-jogo */
+    background-color: black; /* Bloqueia a imagem de fundo */
+    border: 4px solid black; /* Borda preta sólida */
+    border-radius: 12px;
+}
+
+.dicas {
+    text-align: center;
+    font-size: 2rem;
+}

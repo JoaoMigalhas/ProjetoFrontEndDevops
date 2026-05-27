@@ -1,0 +1,122 @@
+[
+  {
+    "nickname": "TEST",
+    "score": -165,
+    "acertos": 12,
+    "erros": 57,
+    "dicas": 0
+  },
+  {
+    "nickname": "",
+    "score": -75,
+    "acertos": 2,
+    "erros": 19,
+    "dicas": 0
+  },
+  {
+    "nickname": "asda",
+    "score": 45,
+    "acertos": 5,
+    "erros": 1,
+    "dicas": 0
+  },
+  {
+    "nickname": "srge",
+    "score": 10,
+    "acertos": 1,
+    "erros": 0,
+    "dicas": 0
+  },
+  {
+    "nickname": "abcd",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "9oud",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "9ouc",
+    "score": 12,
+    "acertos": 1,
+    "erros": 0,
+    "dicas": 2
+  },
+  {
+    "nickname": "9out",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "9oup",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "uuuu",
+    "score": 13,
+    "acertos": 1,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "tttt",
+    "score": 33,
+    "acertos": 3,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "ddas",
+    "score": -5,
+    "acertos": 0,
+    "erros": 1,
+    "dicas": 0
+  },
+  {
+    "nickname": "rrrr",
+    "score": 1,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 1
+  },
+  {
+    "nickname": "jao",
+    "score": -13,
+    "acertos": 2,
+    "erros": 7,
+    "dicas": 2
+  },
+  {
+<<<<<<< HEAD
+    "nickname": "bobo",
+    "score": 5,
+    "acertos": 1,
+    "erros": 1,
+    "dicas": 0
+  },
+  {
+    "nickname": "joao",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+=======
+    "nickname": "henr",
+    "score": 32,
+    "acertos": 3,
+    "erros": 0,
+    "dicas": 2
+>>>>>>> feature/deploy
+  }
+]
