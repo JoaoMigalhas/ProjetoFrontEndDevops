@@ -91,7 +91,7 @@ switch (comparacao_qntd_filmes) {
     }
 
     cardMoviedle.innerHTML = (`
-        <h1>Comparado ao filme sorteado...</h1>
+        <h1>comparado ao filme sorteado...</h1>
         <div class="moviedle">
             <img src="${comparacao_lancamento}">
             <img src="${comparacao_qntd_filmes}">
