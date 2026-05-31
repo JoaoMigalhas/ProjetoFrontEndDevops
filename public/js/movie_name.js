@@ -40,7 +40,7 @@ buttonMovieName.addEventListener('click', async () => {
     //evento caso o usuário acerte a resposta
     if(dataMessage == "resposta correta") {
         divNomeFilme.innerHTML = `<p>${objFilmeSorteado.filme}</p>`
-        divAnswer.style.display = "block";
+        divAnswer.style.display = "flex";
     } 
     //evento caso o usuário erre a resposta
     else {

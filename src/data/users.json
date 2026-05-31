@@ -1,10 +1,10 @@
 [
   {
     "nickname": "",
-    "score": -18,
-    "acertos": 0,
-    "erros": 4,
-    "dicas": 2
+    "score": 45,
+    "acertos": 8,
+    "erros": 7,
+    "dicas": 0
   },
   {
     "nickname": "qqqq",
@@ -40,5 +40,75 @@
     "acertos": 0,
     "erros": 0,
     "dicas": 3
+  },
+  {
+    "nickname": "aaaa",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "aaa",
+    "score": 85,
+    "acertos": 11,
+    "erros": 5,
+    "dicas": 0
+  },
+  {
+    "nickname": "gasd",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "gase",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "gasf",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "gasl",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "gasc",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "gasn",
+    "score": 0,
+    "acertos": 0,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "hio",
+    "score": 13,
+    "acertos": 1,
+    "erros": 0,
+    "dicas": 3
+  },
+  {
+    "nickname": "lui",
+    "score": 21,
+    "acertos": 2,
+    "erros": 0,
+    "dicas": 1
   }
 ]

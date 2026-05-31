@@ -1,18 +1,42 @@
+
 .card-dicas {
-    display: flex; /* Adicionado para ativar o flexbox se contiver itens */
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     color: #fff;
-    padding: 16px;
-    font-size: 1rem;
+    padding: 20px 24px;
+    font-size: 2rem;
     margin: 20px auto;
-    max-width: 1000px; /* Alinha o tamanho com o .card-jogo */
-    background-color: black; /* Bloqueia a imagem de fundo */
-    border: 4px solid black; /* Borda preta sólida */
+    max-width: 1000px;
+    background-color: #111111;        
+    border: 2px solid #ff8c00;       
     border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.2); 
+    position: relative;              
+}
+
+.card-dicas::before {
+    content: "DICA";
+    position: absolute;
+    top: -16px;                     
+    left: 24px;
+    background-color: #ff8c00;       
+    color: #000000;                   
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 2px 14px;
+    border-radius: 20px;
 }
 
 .dicas {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+}
+
+.dicas:last-child {
+    border-bottom: none;              
 }
