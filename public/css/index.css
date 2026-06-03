@@ -24,23 +24,21 @@ body {
     border-bottom: 4px solid #000; /* Borda preta separadora */
 }
 
-/* Garante que o timer e o botão tenham larguras equivalentes para centralizar o título perfeitamente */
 .timer, .topo-jogo .btn-voltar-score {
     width: 180px; 
 }
 
-/* Alinha o texto do cronômetro estritamente à esquerda */
+
 .timer {
-    color: #ff8c00;                         /* Laranja */
-    font-size: 1.8rem;                      /* Maior */
+    color: #ff8c00;                         
+    font-size: 2rem;                    
     font-weight: bold;
-    text-align: left;
-    width: 180px;
-    background-color: #111111;             /* Fundo preto */
-    border: 2px solid #ff8c00;             /* Borda laranja */
+    text-align: center;
+    background-color: #111111;             
+    border: 2px solid #ff8c00;        
     border-radius: 12px;
     padding: 6px 16px;
-    text-shadow: 0 0 10px rgba(255, 140, 0, 0.6); /* Brilho no número */
+    text-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
     letter-spacing: 2px;
     align-items: center;
 }

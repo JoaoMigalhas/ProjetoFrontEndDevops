@@ -1,6 +1,4 @@
-/* Fundo escuro cobrindo a tela */
 .correct-answer {
-    display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -20,8 +18,8 @@
     align-items: center;
     gap: 20px;
 
-    background-color: #111111;              /* Fundo preto */
-    border: 2px solid #ff8c00;              /* Borda laranja */
+    background-color: #111111;             
+    border: 2px solid #ff8c00;              
     border-radius: 16px;
     padding: 40px 32px;
     width: 600px;
