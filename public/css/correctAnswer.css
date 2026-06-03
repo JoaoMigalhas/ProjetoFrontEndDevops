@@ -10,7 +10,6 @@
     background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* Card de acerto */
 .card-acerto {
     display: flex;
     flex-direction: column;
@@ -24,12 +23,11 @@
     padding: 40px 32px;
     width: 600px;
     margin: 40px auto;
-    box-shadow: 0 0 30px rgba(255, 140, 0, 0.3); /* Brilho laranja */
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.3);
 }
 
-/* Título "Parabéns, você acertou!" */
 .card-acerto h1 {
-    color: #ff8c00;                         /* Laranja */
+    color: #ff8c00;                         
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -38,7 +36,7 @@
 }
 
 .card-acerto h3 {
-    color: #ff8c00;                         /* Laranja */
+    color: #ff8c00;                        
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -46,16 +44,14 @@
     margin: 0;
 }
 
-/* Nome do filme */
 .nome-filme {
-    color: #ffffff;                         /* Branco */
+    color: #ffffff;                        
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
 }
 
-/* Botão Score — laranja sólido */
 #buttonScore {
     background-color: #ff8c00;
     color: #000000;
@@ -75,7 +71,6 @@
     color: #ff8c00;
 }
 
-/* Botão Próximo filme — transparente com borda laranja */
 #buttonProxFilme {
     background-color: transparent;
     color: #ff8c00;

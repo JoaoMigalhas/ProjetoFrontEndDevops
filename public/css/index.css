@@ -3,16 +3,14 @@
 }
 
 body {
-    /* Camada 1: Gradiente preto 50% transparente | Camada 2: Imagem de fundo do cinema */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/cinema_background.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    background-attachment: fixed;
     margin: 0px;
     padding: 0px;
 }
 
-/* MODIFICADO: Adicionado fundo preto e borda para bloquear a imagem atrás */
 .topo-jogo {
     display: flex;
     align-items: center;
@@ -20,8 +18,8 @@ body {
     width: 100%;
     padding: 40px;
     box-sizing: border-box;
-    background-color: black; /* Impede a imagem de aparecer atrás */
-    border-bottom: 4px solid #000; /* Borda preta separadora */
+    background-color: black; 
+    border-bottom: 4px solid #000; 
 }
 
 .timer, .topo-jogo .btn-voltar-score {
@@ -44,8 +42,6 @@ body {
 }
 
 
-
-/* Alinha o texto do botão centralizado no espaço dele */
 .topo-jogo .btn-voltar-score {
     text-align: center;
 }

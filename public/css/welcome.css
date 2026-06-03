@@ -1,4 +1,4 @@
-/* Fundo escuro cobrindo a tela */
+
 .welcome {
     display: none;
     align-items: center;
@@ -12,7 +12,7 @@
     background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* Card do welcome */
+
 .welcomeBox {
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     background-color: #111111;
     border: 2px solid #ff8c00;
     border-radius: 20px;
-    box-shadow: 0 0 40px rgba(255, 140, 0, 0.5); /* Brilho mais intenso */
+    box-shadow: 0 0 40px rgba(255, 140, 0, 0.5); 
     width: 90%;
     max-width: 600px;
     max-height: 700px;
@@ -30,21 +30,21 @@
     padding: 32px;
 }
 
-/* Título Bem vindo — mais destacado */
+
 .welcome-titulo {
-    color: #ff8c00;                         /* Laranja em vez de branco */
-    font-size: 2rem;                        /* Maior */
+    color: #ff8c00;                         
+    font-size: 2rem;                        
     font-weight: bold;
-    letter-spacing: 3px;                    /* Espaçamento entre letras */
-    text-transform: uppercase;              /* Maiúsculo */
-    text-shadow: 0 0 12px rgba(255, 140, 0, 0.6); /* Brilho no texto */
+    letter-spacing: 3px;                   
+    text-transform: uppercase;            
+    text-shadow: 0 0 12px rgba(255, 140, 0, 0.6); 
     margin: 0;
     text-align: center;
 }
 
-/* Subtítulo explicação do jogo */
+
 .welcome-subtitulo {
-    color: #ffffff;                         /* Branco para contrastar com o título */
+    color: #ffffff;                         
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
@@ -52,37 +52,35 @@
     letter-spacing: 1px;
 }
 
-/* Container das regras — mais destacado */
+
 .welcome-regras {
     background-color: #1a1a1a;
-    border: 2px solid #ff8c00;             /* Borda mais grossa */
+    border: 2px solid #ff8c00;            
     border-radius: 12px;
     padding: 20px 24px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 14px;                             /* Mais espaço entre as regras */
+    gap: 14px;                            
 }
 
-/* Cada regra */
 .welcome-regras p {
     color: #ffffff;
-    font-size: 1.2rem;                       /* Levemente maior */
+    font-size: 1.2rem;                     
     margin: 0;
     line-height: 1.6;
     padding-left: 4px;
-    border-left: 3px solid #ff8c00;       /* Linha laranja à esquerda */
-    padding-left: 12px;                    /* Espaço para a linha */
+    border-left: 3px solid #ff8c00;     
+    padding-left: 12px;                   
 }
 
-/* Destaque em laranja nos valores importantes */
 .welcome-regras span {
     color: #ff8c00;
     font-weight: bold;
     font-size: 1.05rem;
 }
 
-/* Botão OK */
+
 #buttonWelcomeBox {
     background-color: #ff8c00;
     color: #000000;
@@ -97,13 +95,13 @@
     transition: 0.2s;
 }
 
-/* Hover no botão OK */
+
 #buttonWelcomeBox:hover {
     background-color: #000000;
     color: #ff8c00;
 }
 
-/* Imagem do popcorn */
+
 .welcome-img {
     width: 80px;
     filter: drop-shadow(0 0 8px rgba(255, 140, 0, 0.5));

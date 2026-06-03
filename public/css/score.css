@@ -5,12 +5,11 @@ body {
     font-family: 'Century Gothic', CenturyGothic, sans-serif;
 }
 
-/* Card principal */
 .card-score {
     border-radius: 16px;
-    background-color: #111111;              /* Fundo preto */
-    border: 2px solid #ff8c00;              /* Borda laranja */
-    box-shadow: 0 0 30px rgba(255, 140, 0, 0.3); /* Brilho laranja */
+    background-color: #111111;             
+    border: 2px solid #ff8c00;              
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.3); 
     padding: 32px;
     width: 600px;
     margin: 40px auto;
@@ -20,9 +19,8 @@ body {
     gap: 20px;
 }
 
-/* Título ScoreBoard */
 .card-score .titulo h1 {
-    color: #ff8c00;                         /* Laranja */
+    color: #ff8c00;                         
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 4px;
@@ -30,7 +28,7 @@ body {
     margin: 0;
 }
 
-/* Subtítulo */
+
 .subtitulo {
     color: #ffffff;
     font-size: 0.9rem;
@@ -39,42 +37,41 @@ body {
     text-align: center;
 }
 
-/* Container da tabela */
+
 .area-ranking {
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid #ff8c00;              /* Borda laranja na tabela */
+    border: 1px solid #ff8c00;              
 }
 
-/* Cabeçalho da tabela */
+
 .area-ranking thead {
-    background-color: #ff8c00;              /* Fundo laranja */
-    color: #000000;                         /* Texto preto */
+    background-color: #ff8c00;             
+    color: #000000;                        
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* Linhas do corpo */
 .area-ranking tbody tr {
-    background-color: #1a1a1a;             /* Fundo preto escuro */
-    color: #ffffff;                         /* Texto branco */
-    border-bottom: 1px solid #ff8c00;      /* Linha divisória laranja */
+    background-color: #1a1a1a;             
+    color: #ffffff;                         
+    border-bottom: 1px solid #ff8c00;      
     transition: 0.2s;
 }
 
-/* Hover nas linhas */
+
 .area-ranking tbody tr:hover {
-    background-color: #ff8c00;             /* Fundo vira laranja */
-    color: #000000;                         /* Texto vira preto */
+    background-color: #ff8c00;            
+    color: #000000;                         
     cursor: pointer;
 }
 
-/* Botão Voltar para o menu */
+
 .btn-voltar-menu {
     color: #000000;
-    background-color: #ff8c00;             /* Fundo laranja */
+    background-color: #ff8c00;             
     border: 2px solid #ff8c00;
     border-radius: 24px;
     padding: 10px 32px;
@@ -85,11 +82,10 @@ body {
 }
 
 .btn-voltar-menu:hover {
-    background-color: #000000;             /* Fundo vira preto */
-    color: #ff8c00;                         /* Texto vira laranja */
+    background-color: #000000;           
+    color: #ff8c00;                        
 }
 
-/* Botão Score no topo do index */
 .btn-voltar-score {
     color: #000000;
     background-color: #ff8c00;
