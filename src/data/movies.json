@@ -1,7 +1,6 @@
 [{
     "id": 0,
     "filme": "matrix",
-    "genêro": ["ficção científica", "ação"],
     "ano_lancamento": 1999,
     "qntd_filmes": 4,
     "dica":[
@@ -14,7 +13,6 @@
 {
     "id": 1,
     "filme": "o exterminador do futuro",
-    "genêro": ["ficção científica", "ação"],
     "ano_lancamento": 1985,
     "qntd_filmes": 6,
     "dica": [
@@ -22,5 +20,221 @@
         "Há um inimigo de estrutura metálica implacável sob uma face humana",
         "A história gira em torno da Skynet",
         "Um ciborgue vindo do futuro usa óculos escuros para esconder um olho mecânico vermelho e brilhante"
+    ]
+},
+{
+    "id": 2,
+    "filme": "o poderoso chefão",
+    "ano_lancamento": 1972,
+    "qntd_filmes": 3,
+    "dica": [
+        "A transição de poder em um império familiar é desencadeada por um atentado nas ruas de Nova York",
+        "Um casamento opulento serve de fachada para reuniões de negócios escusos nos bastidores",
+        "A recusa em entrar no mercado de narcóticos inicia uma guerra sangrenta entre clãs",
+        "Um dos filhos, inicialmente afastado dos negócios de sangue, assume o controle com frieza calculada"
+    ]
+},
+{
+    "id": 3,
+    "filme": "interestelar",
+    "ano_lancamento": 2014,
+    "qntd_filmes": 1,
+    "dica": [
+        "A sobrevivência humana depende de decifrar anomalias gravitacionais dentro do quarto de uma criança",
+        "Plantações de milho morrendo e tempestades de poeira forçam uma missão de última hora ao cosmos",
+        "O tempo passa de forma drasticamente diferente em um planeta coberto por ondas gigantescas",
+        "Um ex-piloto da NASA cruza um buraco de minhoca perto de Saturno acompanhado por robôs retangulares"
+    ]   
+},
+{
+    "id": 4,
+    "filme": "pulp fiction",
+    "ano_lancamento": 1994,
+    "qntd_filmes": 1,
+    "dica": [
+        "Uma maleta brilhante e misteriosa conecta os destinos de criminosos em Los Angeles",
+        "Discussões banais sobre massagens nos pés e hambúrgueres europeus antecedem execuções violentas",
+        "Uma overdose acidental de heroína é revertida de forma brutal com uma agulha no coração",
+        "Dois capangas vestem ternos pretos, e um deles costuma recitar um versículo bíblico fictício antes de atirar"
+    ]
+},
+{
+    "id": 5,
+    "filme": "psicose",
+    "ano_lancamento": 1960,
+    "qntd_filmes": 4,
+    "dica": [
+        "O roubo de uma grande soma de dinheiro leva uma mulher a se hospedar no lugar errado durante uma tempestade",
+        "Um motel decadente e isolado é gerenciado por um jovem excessivamente apegado à sua mãe",
+        "Um crime violento no banheiro é acompanhado por uma trilha sonora estridente de violinos",
+        "O mistério central envolve a identidade da idosa que habita a casa gótica no topo da colina"
+    ]
+},
+{
+    "id": 6,
+    "filme": "jurassic park",
+    "ano_lancamento": 1993,
+    "qntd_filmes": 6,
+    "dica": [
+        "A extração de material genético preservado em âmbar pré-histórico viabiliza um empreendimento ambicioso",
+        "Cientistas e crianças ficam encurralados após uma tempestade tropical sabotar os sistemas de segurança",
+        "A vibração da água em um copo plástico anuncia a aproximação de uma força massiva",
+        "Criaturas extintas clonadas saem do controle em uma ilha na Costa Rica idealizada por um bilionário eccentricity"
+    ]
+},
+{
+    "id": 7,
+    "filme": "clube da luta",
+    "ano_lancamento": 1999,
+    "qntd_filmes": 1,
+    "dica": [
+        "A insônia crônica de um burocrata o leva a frequentar grupos de apoio para doenças que ele não tem",
+        "A insatisfação com o consumismo moderno gera uma organização clandestina focada em combate corporal básico",
+        "O plano de destruição do sistema financeiro global é chamado de Projeto Underground ou Projeto 'Mayhem'",
+        "O protagonista descobre que seu carismático parceiro fabricante de sabão é, na verdade, uma projeção de sua mente"
+    ]
+},
+{
+    "id": 8,
+    "filme": "o senhor dos anéis: a sociedade do anel",
+    "ano_lancamento": 2001,
+    "qntd_filmes": 3,
+    "dica": [
+        "Uma herança aparentemente inofensiva força um jovem pacato a abandonar seu vilarejo rural",
+        "Uma assembleia de diferentes raças decide que um objeto de poder absoluto deve ser destruído no fogo",
+        "A comitiva é perseguida por espectros de túnicas pretas montados a cavalo",
+        "Um mago cinzento confronta uma criatura de fogo e sombra em uma ponte subterrânea e cai no abismo"
+    ]
+},
+{
+    "id": 9,
+    "filme": "tubarão",
+    "ano_lancamento": 1975,
+    "qntd_filmes": 4,
+    "dica": [
+        "O prefeito de uma cidade turística se recusa a fechar as praias no início da temporada de verão",
+        "Ameaças invisíveis sob a água são sugeridas por uma trilha sonora tensa de duas notas crescentes",
+        "Três homens com habilidades distintas saem ao mar em um barco pesqueiro chamado Orca",
+        "Um predador gigante da perspectiva subaquática ataca banhistas na fictícia ilha de Amity"
+    ]
+},
+{
+    "id": 10,
+    "filme": "minha mãe é uma peça",
+    "ano_lancamento": 2013,
+    "qntd_filmes": 3,
+    "dica": [
+      "Uma mãe hiperativa e engraçada decide sair de casa após ouvir seus filhos reclamando dela",
+      "A protagonista adora usar bobes no cabelo, veste um avental e não larga o telefone",
+      "Dona Hermínia desabafa e conta histórias de sua família na cozinha da tia Zélia",
+      "O filme é uma comédia brasileira baseada em uma peça de teatro do ator Paulo Gustavo"
+    ]
+},
+{
+    "id": 11,
+    "filme": "shrek",
+    "ano_lancamento": 2001,
+    "qntd_filmes": 4,
+    "dica": [
+      "Um ogro verde quer apenas recuperar a paz do seu pântano isolado",
+      "O protagonista viaja para resgatar uma princesa acompanhado por um burro falante",
+      "A princesa resgatada esconde o segredo de que também se transforma em ogra à noite",
+      "O vilão da história é um homem muito baixo chamado Lorde Farquaad"
+    ]
+},
+{
+    "id": 12,
+    "filme": "titanic",
+    "ano_lancamento": 1997,
+    "qntd_filmes": 1,
+    "dica": [
+      "Um jovem artista pobre e uma jovem rica se apaixonam a bordo de um navio de luxo",
+      "O casal protagonista vive um romance proibido e desenha um retrato famoso",
+      "A viagem romântica é interrompida quando a embarcação colide com um iceberg gigante",
+      "Jack e Rose tentam sobreviver nas águas congelantes do Oceano Atlântico"
+    ]
+},
+{
+    "id": 13,
+    "filme": "toy story",
+    "ano_lancamento": 1995,
+    "qntd_filmes": 4,
+    "dica": [
+      "Brinquedos ganham vida secretamente sempre que os humanos saem do quarto",
+      "O ciúme surge quando um boneco de caubói antigo é trocado por um patrulheiro espacial moderno",
+      "O boneco espacial acredita de verdade que é um astronauta real e que pode voar",
+      "Woody e Buzz Lightyear precisam se unir para voltar para a casa do menino Andy"
+    ]
+},
+{
+    "id": 14,
+    "filme": "vingadores: ultimato",
+    "ano_lancamento": 2019,
+    "qntd_filmes": 4,
+    "dica": [
+      "Os heróis sobreviventes tentam reverter o estalo que sumiu com metade do universo",
+      "O grupo viaja no tempo através do Reino Quântico para coletar as Joias do Infinito",
+      "O Homem de Ferro, Capitão América e Thor lideram o confronto final contra o vilão Thanos",
+      "A batalha termina quando um dos heróis estala os dedos dizendo: 'Eu sou o Homem de Ferro'"
+    ]
+},
+{
+    "id": 15,
+    "filme": "procurando nemo",
+    "ano_lancamento": 2003,
+    "qntd_filmes": 2,
+    "dica": [
+      "Um peixe-palhaço superprotetor cruza o oceano para resgatar seu único filho",
+      "O filhote é capturado por um mergulhador e vai parar no aquário de um dentista em Sydney",
+      "O pai recebe a ajuda de uma peixinha azul que sofre de perda de memória recente",
+      "Dory repete constantemente o lema 'continue a nadar' durante a jornada"
+    ]
+},
+{
+    "id": 16,
+    "filme": "harry potter e a pedra filosofal",
+    "ano_lancamento": 2001,
+    "qntd_filmes": 8,
+    "dica": [
+      "Um menino órfão descobre no seu aniversário de 11 anos que é um bruxo",
+      "O protagonista recebe uma carta entregue por uma coruja e vai estudar em Hogwarts",
+      "Ele faz amizade com Rony Weasley e Hermione Granger no trem expresso",
+      "O jovem bruxo tem uma cicatriz em forma de raio na testa provocada por Voldemort"
+    ]
+},
+{
+    "id": 17,
+    "filme": "o rei leão",
+    "ano_lancamento": 1994,
+    "qntd_filmes": 3,
+    "dica": [
+      "Um filhote de leão foge do seu reino após a trágica morte de seu pai",
+      "O pequeno herói cresce na floresta aprendendo a filosofia do 'Hakuna Matata'",
+      "Seus melhores amigos de exílio são um suricato tagarela e um javali guloso",
+      "Simba retorna quando adulto para desafiar seu tio maldoso, Scar, e assumir a Pedra do Rei"
+    ]
+},
+{
+    "id": 18,
+    "filme": "esqueceram de mim",
+    "ano_lancamento": 1990,
+    "qntd_filmes": 6,
+    "dica": [
+      "Uma família viaja para Paris no Natal e acidentalmente deixa um dos filhos para trás",
+      "Um garoto de 8 anos precisa defender sua casa sozinho contra dois ladrões atrapalhados",
+      "Kevin usa brinquedos, armadilhas caseiras e latas de tinta para proteger a residência",
+      "O filme é um clássico natalino dos anos 90 estrelado por Macaulay Culkin"
+    ]
+},
+{
+    "id": 19,
+    "filme": "divertida mente",
+    "ano_lancamento": 2015,
+    "qntd_filmes": 2,
+    "dica": [
+      "A história se passa dentro da mente de uma menina de 11 anos chamada Riley",
+      "As emoções primárias controlam as reações dela em uma sala de comando central",
+      "A Alegria e a Tristeza se perdem e precisam guiar as memórias de volta ao controle",
+      "O Medo, a Raiva e o Nojinho tentam manter a rotina da garota após uma mudança de cidade"
     ]
 }]

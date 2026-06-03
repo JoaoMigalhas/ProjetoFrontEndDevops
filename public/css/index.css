@@ -3,16 +3,14 @@
 }
 
 body {
-    /* Camada 1: Gradiente preto 50% transparente | Camada 2: Imagem de fundo do cinema */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/cinema_background.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    background-attachment: fixed;
     margin: 0px;
     padding: 0px;
 }
 
-/* MODIFICADO: Adicionado fundo preto e borda para bloquear a imagem atrás */
 .topo-jogo {
     display: flex;
     align-items: center;
@@ -20,34 +18,42 @@ body {
     width: 100%;
     padding: 40px;
     box-sizing: border-box;
-    background-color: black; /* Impede a imagem de aparecer atrás */
-    border-bottom: 4px solid #000; /* Borda preta separadora */
+    background-color: black; 
+    border-bottom: 4px solid #000; 
 }
 
-/* Garante que o timer e o botão tenham larguras equivalentes para centralizar o título perfeitamente */
 .timer, .topo-jogo .btn-voltar-score {
     width: 180px; 
 }
 
-/* Alinha o texto do cronômetro estritamente à esquerda */
+
 .timer {
-    color: white; 
-    font-size: 1.2rem;
+    color: #ff8c00;                         
+    font-size: 2rem;                    
     font-weight: bold;
-    text-align: left;
+    text-align: center;
+    background-color: #111111;             
+    border: 2px solid #ff8c00;        
+    border-radius: 12px;
+    padding: 6px 16px;
+    text-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+    letter-spacing: 2px;
+    align-items: center;
 }
 
-/* Alinha o texto do botão centralizado no espaço dele */
+
 .topo-jogo .btn-voltar-score {
     text-align: center;
 }
 
 .card-jogo{
     border-radius: 16px;
-    background-color: rgb(108, 101, 101);
+    background-color: rgba(0, 0, 0, 0.75); 
+    border: 2px solid #ff8c00;              
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.2); 
     padding: 32px;
     width: 600px;
-    margin: 20px auto; 
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,20 +62,38 @@ body {
 }
 
 .card-jogo button {
-    background-color: #b5a7a7;
-    color: black;
-    border: 2px;
+    background-color: transparent;        
+    color: #ff8c00;                 
+    border: 2px solid #ff8c00;
     border-radius: 24px;
     padding: 12px 32px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+.card-jogo button:hover {
+    background-color: #a18562;      
+    color: #ff8c00;                 
+    border-color: #ff8c00;
+}
+
+#buttonDicas {
+    background-color: transparent;
+    color: #ff8c00;
+    border: 2px solid #ff8c00;
+}
+
+#buttonDicas:hover {    
+    background-color: #a18562;       
+    color: #ff8c00;                 
+    border-color: #ff8c00;
 }
 
 .titulo {
-    color: orange;
-    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -78,28 +102,48 @@ body {
 }
 
 .titulo h1 {
+    color: orange;
+    font-size: 2rem;
     margin: 0;
     font-size: 2rem;
 }
 
-.card-jogo input[type="text"] {
-    background-color: #b5a7a7;
-    color: black;
-    border: 2px solid #fffbfb;
-    border-radius: 8px;
-    padding: 10px 16px;
+.titulo h2 {
+    color: #fffbfb;
     font-size: 1rem;
+}
+
+.card-jogo input[type="text"] {
+    background-color: #1a1a1a;        
+    color: #ff8c00;                  
+    border: 2px solid #ff8c00;        
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
     width: 100%;
     outline: none;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+.card-jogo input[type="text"]:focus {
+    border-color: #ffffff;            
+    color: #ffffff;                  
 }
 
 .btn-voltar-score{
-    color: black;
-    background-color: #b5a7a7;
-    border: 2px solid #b5a7a7;
+    color: #000000;
+    background-color: #ff8c00;
+    border: 2px solid #ff8c00;
     border-radius: 24px;
     padding: 10px 32px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+.btn-voltar-score:hover {
+    background-color: #000000;
+    color: #ff8c00;
 }

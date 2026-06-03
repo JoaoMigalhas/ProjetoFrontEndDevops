@@ -20,3 +20,6 @@ const cardMoviedle = document.querySelector('.card-moviedle');
 //div welcome
 const divWelcome = document.querySelector('.welcome');
 const buttonWelcomeBox = document.getElementById('buttonWelcomeBox');
+
+//div tempo-esgotado
+const divTempoEsgotado = document.querySelector('.card-tempo-esgotado');

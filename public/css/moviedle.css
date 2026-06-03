@@ -3,3 +3,8 @@
     flex-direction: row;
     gap: 100px;
 }
+
+.card-moviedle h1{
+    font-size: 2rem;
+    color: #fffbfb
+}

@@ -1,39 +1,91 @@
 .correct-answer {
-    display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     display: none;
-
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-.card-acerto{
+.card-acerto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 
+    background-color: #111111;             
+    border: 2px solid #ff8c00;              
     border-radius: 16px;
-    background-color: rgb(108, 101, 101);
-    padding: 32px;
+    padding: 40px 32px;
     width: 600px;
     margin: 40px auto;
+    box-shadow: 0 0 30px rgba(255, 140, 0, 0.3);
 }
 
-.card-acerto button {
-    background-color: #b5a7a7;
-    color: black;
-    border: 2px;
+.card-acerto h1 {
+    color: #ff8c00;                         
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+}
+
+.card-acerto h3 {
+    color: #ff8c00;                        
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+}
+
+.nome-filme {
+    color: #ffffff;                        
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#buttonScore {
+    background-color: #ff8c00;
+    color: #000000;
+    border: 2px solid #ff8c00;
     border-radius: 24px;
     padding: 12px 32px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+#buttonScore:hover {
+    background-color: #000000;
+    color: #ff8c00;
+}
+
+#buttonProxFilme {
+    background-color: transparent;
+    color: #ff8c00;
+    border: 2px solid #ff8c00;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+#buttonProxFilme:hover {
+    background-color: #ff8c00;
+    color: #000000;
 }

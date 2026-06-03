@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/correctAnswer.css">
         <link rel="stylesheet" href="./css/welcome.css">
         <link rel="stylesheet" href="./css/dicas.css">
+        <link rel="stylesheet" href="./css/tempoEsgotado.css">
         <title>Moviedle</title>
     </head>
 
@@ -20,15 +21,13 @@
             </div>
             <div class="titulo">
                 <h1>Moviedle</h1>
+                <h2>Descubra o filme com base nas dicas!!</h2>
             </div>
             <a href="score.html" class="btn-voltar-score">Score</a>
         </header>
         <div class="card-dicas">
         </div>
         <main class="card-jogo">
-            <div class="subtitulo">
-                <h2>Descubra o filme com base nas dicas!!</h2>
-            </div>
             <div class="card-moviedle">
 
             </div>
@@ -42,26 +41,42 @@
 
         <div class="login">
             <div class="loginBox">
-                <p class="txtTag">Insira sua tag de jogador!</p>
-                <input type="text" id="inputLoginBox" placeholder="AAAA" maxlength="4">
-                <button id="buttonLoginBox">OK</button>
+                <p class="txtTag">INSIRA SUA TAG PARA JOGAR!</p>
+                <h4 class="txtTag2">A TAG deve conter até 4 letras!</h4>
+                <input type="text" id="inputLoginBox" placeholder="" maxlength="4">
+                <button id="buttonLoginBox">Jogar!</button>
             </div>
         </div>
+
         <div class="welcome">
             <div class="welcomeBox">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem tenetur unde voluptatum sunt nemo nobis, odio perspiciatis nostrum est. Modi doloribus magni cum at illum nulla animi sit aspernatur.</p>
-            <button id="buttonWelcomeBox">OK</button>
+                <h2 class="welcome-titulo">Bem vindo!</h2>
+                <p class="welcome-subtitulo"><em>Como funciona:</em></p>
+                <div class="welcome-regras">
+                    <p>Você tem um tempo útil de <span>1 minuto</span> para acertar qual filme é, com base nas dicas!</p>
+                    <p>Se errar, o site lhe dará alguns "cards" que facilitarão sua vida.</p>
+                    <p>Cada filme tem no máximo <span>3 dicas</span> que você pode requisitar.</p>
+                    <p>Se errar vai perder pontos, mas o filme só mudará quando o tempo acabar.</p>
+                    <p>Se acertar ganha mais <span>2 dicas</span> pro próximo filme</p>
+                </div>
+                <button id="buttonWelcomeBox">OK</button>
             </div>
         </div>
+        
         <div class="correct-answer">
             <div class="card-acerto">
-                <h1>Pabéns, você acertou!</h1>
+                <h1>Pabéns, você acertou o filme!</h1>
+                <h3>O filme era</h3>
                 <div class="nome-filme">
 
                 </div>
                 <button id="buttonScore">Score</button>
                 <button id="buttonProxFilme">Próximo filme</button>
             </div>
+        </div>
+
+        <div class="card-tempo-esgotado">
+
         </div>
 
         <script src="./js/functions/htmlElements.js"></script>

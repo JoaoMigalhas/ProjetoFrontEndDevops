@@ -4,9 +4,11 @@ let objFilmeSorteado = "";
 //o sorteio acontece apartir do momento que o usuário
 //logar no site
 button.addEventListener('click', async () => {
-    //sorteando um novo filme
-    inicializarTimer();
-    sortearFront();
+    if(nickname != "") {
+        //sorteando um novo filme
+        inicializarTimer();
+        sortearFront();
+    }
 });
 
 
@@ -39,8 +41,9 @@ buttonMovieName.addEventListener('click', async () => {
 
     //evento caso o usuário acerte a resposta
     if(dataMessage == "resposta correta") {
+        pausarTimer();
         divNomeFilme.innerHTML = `<p>${objFilmeSorteado.filme}</p>`
-        divAnswer.style.display = "block";
+        divAnswer.style.display = "flex";
     } 
     //evento caso o usuário erre a resposta
     else {

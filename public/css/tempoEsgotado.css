@@ -1,0 +1,34 @@
+.card-tempo-esgotado {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.patolino{
+    width: 600px;
+    height: 600px;
+    background-color: #111111;                           
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;        
+    align-items: center;            
+    gap: 20px;
+}
+
+.patolino p{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ff8c00;
+}
+
+.patolino img{
+    border: 2px solid #ff8c00;
+}

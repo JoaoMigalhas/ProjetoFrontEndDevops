@@ -2,36 +2,50 @@ name: continuos-deployment
 run-name: Deploy 
 on:
   pull_request:
-      branches:
-        - main
+    branches:
+      - main
 jobs:
   deploy:
-      name: deploy
-      runs-on: ubuntu-latest
-
-      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v4
-          with:
-            fetch-depth: 0
-
-        - name: Docker login
-          uses: docker/login-action@v3
-          with:
-            username: ${{ secrets.DOCKER_LOGIN }}
-            password: ${{ secrets.DOCKER_PASSWORD }}
-
-        - name: Docker Build and push
-          uses: docker/build-push-action@v5
-          with:
-            context: .
-            file: ./Dockerfile
-            push: true
-            tags: joaomigalhas/projeto-devops:latest
-
-        - name: Azure Deploy
-          uses: Azure/webapps-deploy@v2.2.19
-          with: 
-            app-name: moviedle
-            publish-profile: ${{ secrets.PUBLISH_PROFILE}}
-            image: joaomigalhas/projeto-devops:latest
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Docker login
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_LOGIN }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Docker Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: joaomigalhas/projeto-devops:latest
+      - name: Azure Deploy
+        uses: Azure/webapps-deploy@v2.2.19
+        with: 
+          app-name: moviedle
+          publish-profile: ${{ secrets.PUBLISH_PROFILE}}
+          image: joaomigalhas/projeto-devops:latest
+          
+  integration-test:
+    name: teste-e2e
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Run cypress
+        run: npx cypress run --config baseUrl=https://moviedle.azurewebsites.net
