@@ -1,7 +1,7 @@
 describe('Moviedle - Testes E2E', () => {
 
     beforeEach(() => {
-        cy.visit('moviedle.azurewebsites.net')
+        cy.visit('/')
     })
 
     it('deve carregar a página com o título Moviedle', () => {
