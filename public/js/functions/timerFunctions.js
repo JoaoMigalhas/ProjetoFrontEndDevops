@@ -1,6 +1,6 @@
 const timer = document.querySelector('.timer');
 
-const TEMPO = 70;
+const TEMPO = 50;
 let tempoRestante;
 let intervalo;
 
