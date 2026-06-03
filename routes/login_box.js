@@ -9,7 +9,7 @@ routes.post('/api/login', async (req, res) => {
     const {nickname} = req.body;
 
     //validando o dado recebido agora pelo backend
-    if(!/^[a-zA-Z0-9]{0,4}$/.test(nickname)) {
+    if(!/^[a-zA-Z0-9]{1,4}$/.test(nickname)) {
         return res.status(400).json({ message: `${nickname} inválido` });
     }
 

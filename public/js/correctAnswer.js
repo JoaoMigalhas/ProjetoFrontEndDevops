@@ -3,6 +3,7 @@ buttonProxFilme.addEventListener('click', async () => {
     
     //sorteando o novo filme
     sortearFront();
+    inicializarTimer();
     divAnswer.style.display = "none";
 });
 

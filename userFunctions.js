@@ -16,8 +16,6 @@ export async function readDatabaseLogin() {
         const raw = await readFile(LOGIN_DB_PATH, 'utf-8');
         return JSON.parse(raw);
     } catch(err) {
-        // ❌ Antes: res.status(500) — res não existe aqui!
-        // ✅ Agora: retorna array vazio se falhar
         console.error(`Erro ao ler banco de dados: ${err}`);
         return [];
     }
@@ -32,6 +30,7 @@ export async function acerto(nickname) {
     const user = users.find(u => u.nickname === nickname);
     if(user) {
         user.acertos += 1;
+        user.dicas += 2;
         atualizarScore(user);
     }
     await writeFile(LOGIN_DB_PATH, JSON.stringify(users, null, 2), 'utf-8');

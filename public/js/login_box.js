@@ -2,8 +2,8 @@ let nickname = "";
 button.addEventListener('click', async () => {
     nickname = inputLogin.value.trim();
 
-    if(!/^[a-zA-Z0-9]{0,4}$/.test(nickname)) {
-        window.alert('O nickname deve ter entre 0 a 4 caracteres válidos!');
+    if(!/^[a-zA-Z0-9]{1,4}$/.test(nickname)) {
+        window.alert('O nickname deve ter entre 1 a 4 caracteres válidos!');
         return;
     }
     if(typeof nickname != 'string') {
