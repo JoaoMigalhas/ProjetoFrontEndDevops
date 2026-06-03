@@ -47,5 +47,9 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
+
+      - name: Install Cypress binary
+        run: npx cypress install
+
       - name: Run cypress
-        run: ./node_modules/.bin/cypress run --config baseUrl=https://moviedle.azurewebsites.net
+        run: npx cypress run --config baseUrl=https://moviedle.azurewebsites.net
